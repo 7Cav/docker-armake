@@ -7,7 +7,7 @@ I took inspiration from the [alpine git](https://hub.docker.com/r/alpine/git/) c
 Simply use the following with whatever arguements and parameters you need
 
 ```
-docker run -ti --rm -v ${HOME}:/root -v $(pwd):/arma armake <args>
+docker run -ti --rm -v ${HOME}:/root -v $(pwd):/arma 7cav/armake <args>
 ```
 
 ### Optional setup
@@ -18,7 +18,7 @@ On *nix based systems, add this fuction to ~/.bashrc or ~/.profile
 
 ```
 function armake () {
-    (docker run -ti --rm -v ${HOME}:/root -v $(pwd):/arma armake "$@")
+    (docker run -ti --rm -v ${HOME}:/root -v $(pwd):/arma 7cav/armake "$@")
 }
 ```
 
