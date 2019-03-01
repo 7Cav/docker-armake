@@ -28,6 +28,8 @@ RUN make
 
 FROM frolvlad/alpine-glibc
 
+LABEL maintainer="adam.jarvis2012@gmail.com"
+
 COPY --from=build /armake/bin/armake /usr/bin/armake
 
 VOLUME /arma
