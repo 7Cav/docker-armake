@@ -10,6 +10,8 @@ Simply use the following with whatever arguements and parameters you need
 docker run -ti --rm -v ${HOME}:/root -v $(pwd):/arma 7cav/armake <args>
 ```
 
+_note: on windows, replace `$(pwd)` with `${pwd}`_
+
 ### Optional setup
 
 On *nix based systems, add this fuction to ~/.bashrc or ~/.profile
