@@ -20,11 +20,8 @@ RUN apt-get install libssl-dev \
                     bison \
                     flex -y
 
-# Clear cache
 RUN apt-get clean && rm -rf /srv/lib/apt/lists/*
-
 RUN make
-# RUN make install
 
 FROM frolvlad/alpine-glibc
 
